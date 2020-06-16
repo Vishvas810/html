@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms & Input</title>
+</head>
+<body>
+  <form action="process.php">
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" value="vbp"> <!--id="name" is used to highlight name as both have the same attribute name="name" will assign vlaue of Name to textbox-->
+    </div>
+
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" placeholder="Enter an email"> <!--placeholder shows a message in textbox-->
+    </div>
+
+    <div>
+      <label for="message">Message</label><br>
+     <textarea name="message" id="message" cols="50" rows="5" >
+      </textarea>
+    </div>
+    <br>
+    <!-- select list -->
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="Male" selected>Male</option> <!--Male is label-->
+        <option value="Female">Female</option>
+        <option value="Others">Other</option>
+      </select>
+
+      <div>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">  
+      </div>
+    </div>
+   
+    <br>
+
+    <div>
+      <label for="biirthdate">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+   
+    <br>
+
+    <div>
+      <label for="likes">Membership</label>
+      <input type="checkbox" name="likes" value="bike" id="likes">Bike <!--Bike is label-->
+      <input type="checkbox" name="likes" value="car" id="likes" checked>Car
+      <input type="checkbox" name="likes" value="boat" id="likes">Boat
+    </div>
+
+    <br>
+
+    
+     <!--First way--> 
+     <input type="submit" value="Submit">
+      <!-- using button tag -->
+   <!--Second way--> 
+    <button type="submit">Submit</button>
+    
+    <br>
+
+    <!-- Reset button -->
+    <button type="reset">Reset</button> <!-- It will reset all the textfields values except for the vbp(as it is predefined)-->
+
+  </form>
+</body>
+</html>
